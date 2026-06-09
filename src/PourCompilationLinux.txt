@@ -1,0 +1,11 @@
+# Si "g++ not found"
+sudo apt install g++
+
+# Si OpenMP absent (omp.h introuvable)
+sudo apt install libgomp1 libomp-dev
+# ou compiler sans OpenMP :
+python build_C++.py --no-omp
+
+# Nettoyer et recompiler
+python build_C++.py --clean
+python build_C++.py
